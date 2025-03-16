@@ -1,0 +1,203 @@
+body {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+ }
+ 
+ h1 {
+   top: -5px;
+   text-align: center;
+        font-size: 50px;
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+         background-image: linear-gradient(45deg, DeepPink,
+         BlueViolet, Indigo, Red, DarkOrange, Yellow,
+         Lime, MediumAquaMarine, Aqua, Blue, Olive);
+         background-size: 400% 400%;
+         animation: move 10s ease infinite;
+     }
+ 
+     @keyframes move{
+          0% {
+             background-position: 0 0;
+          }
+          25% {
+             background-position: 100% 0;
+          }
+          50% {
+             background-position: 100% 100%;
+          }
+          75% {
+             background-position: 0 100%;
+          }
+          100% {
+             background-position: 0 0;
+          }
+     }
+ 
+ .animation_circle{ 
+ top: 80px;
+ width: 100px; 
+ height: 100px; 
+ border-radius: 50%; 
+ background-color: #421886; 
+ position: absolute; 
+ animation-name: circle; 
+ animation-duration: 5s;
+ animation-timing-function: linear; 
+ animation-iteration-count: infinite; 
+ animation-direction: alternate;
+ }
+ 
+ @keyframes circle{ 
+ 0%{ 
+ left: 0%; 
+ }
+ 50%{
+ border-radius: 0%; 
+ box-shadow: 5px 5px 2px 0 green; 
+ }
+ 100%{ 
+ left: 60%; box-shadow: 5px 5px 2px 0 rgb(255, 0, 217); 
+ } 
+ }
+ 
+ Yaroslav:
+ <html>
+ <body>
+ 
+ <h1>Анімований слайдер</h1>
+ 
+ <div class="slider">
+   <img class="photo" src="https://www.volynnews.com/resize/450x341/r/files/news/2023/09-20/368792/photo_2023-09-20_12-37-02.jpg" alt="Руди котик в чорну полоску який дивиться на тебе" />
+   <img class="photo" src="https://tickikids.ams3.cdn.digitaloceanspaces.com/z1.cache/gallery/organizations/7912/image_62be91e3241784.73291946.jpg" alt="" />
+   <img class="photo" src="<img class="photo" src="https://tickikids.ams3.cdn.digitaloceanspaces.com/z1.cache/gallery/organizations/7912/image_62be91e3241784.73291946.jpg" alt="" />" alt="" />
+   <img class="photo" src="https://cdn2.pokupon.ua/uploaded/merchant_page_images/398162/data/main720x340/IMG_0795.jpg" alt="" />
+   <img class="photo" src="https://www.krainamriy.fun/wp-content/uploads/2022/05/20181008_214418-min-scaled-e1653464694979-300x179.jpg" alt="" />
+ </div>
+ <p>Я котик</p>
+ 
+ </body>
+ </html>
+ 
+ > Yaroslav:
+ body {
+   background: rgb(255, 255, 255);
+ }
+ 
+ h1{
+     text-align: center;
+ }
+ 
+ .slider {
+   margin: 50px auto;
+   width: 700px;
+   height: 500px;
+   overflow: hidden;
+   position: relative;
+ }
+ .photo {
+    top: 60px;
+   position: absolute;
+   -webkit-animation: round 16s infinite;
+   -moz-animation: round 16s infinite;
+   -o-animation: round 16s infinite;
+   animation: round 16s infinite;
+   opacity: 0;
+   width: 700px;
+   height: 500px;
+ }
+ @-webkit-keyframes round {
+   25% {
+     opacity: 1;
+   }
+   40% {
+     opacity: 0;
+   }
+ }
+ @-moz-keyframes round {
+   25% {
+     opacity: 1;
+   }
+   40% {
+     opacity: 0;
+   }
+ }
+ @-o-keyframes round {
+   25% {
+     opacity: 1;
+   }
+   40% {
+     opacity: 0;
+   }
+ }
+ @keyframes round {
+   25% {
+     opacity: 1;
+   }
+   40% {
+     opacity: 0;
+   }
+ }
+ img:nth-child(4) {
+   -webkit-animation-delay: 4s;
+ }
+ img:nth-child(3) {
+   -webkit-animation-delay: 8s;
+ }
+ img:nth-child(2) {
+   -webkit-animation-delay: 12s;
+ }
+ img:nth-child(1) {
+   -webkit-animation-delay: 16s;
+ }
+ 
+ nav a {
+     position: absolute;
+     left: -80px;
+     transition: 1s;
+     padding: 15px;
+     width: 80px;
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+     border-radius: 0 5px 5px 0;
+ }
+ 
+ nav a:hover {
+     left: 0px;
+ }
+ 
+ .menu {
+     top: 20px;
+     background-color: #4CAF50;
+     }
+
+     .menu2 {
+        top: 80px;
+        background-color: blueviolet;
+     }
+ 
+     .gg{
+       text-align: center;
+     }
+ 
+ 
+     main p {
+       text-align: center;
+       color: blue;
+       font-size: 30px;
+     }
+ 
+     main img {
+         width: 700px;
+         height: 600px;
+     }
+
+     iframe {
+      text-align: center;
+     }
+
+     span {
+        background-color: lightgreen;
+     }
+     
